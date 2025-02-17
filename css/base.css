@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(26, 145, 95);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  color: #000;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  color: black;
+  background-color: rgb(154, 255, 3);
+}
+
+@media (max-width: 1032px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.85rem;
+  }
+}

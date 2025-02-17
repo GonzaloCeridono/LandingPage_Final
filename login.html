@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión | GNZ Coaching</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <main>
+      <picture
+        ><img src="assets/images/logo-removebg-preview.png" alt=""
+      /></picture>
+      <article>
+        <h1>¡Bienvenido a GNZ Coaching!</h1>
+        <p>Iniciar sesión</p>
+        <form action="index.html" method="get">
+          <fieldset>
+            <label for="username">E-mail</label>
+            <input type="email" name="username" id="username" required />
+          </fieldset>
+          <fieldset>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" required />
+          </fieldset>
+          <fieldset>
+            <button type="submit">Ingresar</button>
+          </fieldset>
+        </form>
+        <a href="registro.html"
+          ><button>¿Aún no tienes una cuenta? Registrarse</button></a
+        >
+      </article>
+      <button class="home-button" onclick="location.href='index.html'">
+        <img src="assets/images/house-solid.svg" alt="Volver a inicio" />
+      </button>
+    </main>
+  </body>
+</html>

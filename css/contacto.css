@@ -1,0 +1,145 @@
+#contacto {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+#contacto h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 3rem;
+}
+
+#contacto iframe {
+  flex-shrink: 0;
+  width: 40%;
+  height: 360px;
+  border: none;
+}
+
+#contacto .contenedor_info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.25rem;
+  text-decoration: none;
+}
+
+#info_contacto {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.25rem;
+  padding: 1rem;
+  gap: 1rem;
+  width: 50%;
+  height: 100%;
+}
+
+#info_contacto a {
+  text-align: center;
+  color: white;
+}
+
+.contenedor_info img {
+  width: 23px;
+}
+
+#mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(14, 87, 56);
+  border-radius: 0.75rem;
+  gap: 0.5rem;
+}
+
+#consulta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0.75rem;
+}
+
+#consulta h3 {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#consulta fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+#consulta label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#consulta input[type="email"],
+#consulta textarea {
+  color: white;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: rgb(14, 87, 56);
+  font-size: 1rem;
+}
+
+#consulta textarea {
+  height: 150px;
+  resize: none;
+}
+
+#consulta button {
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+}
+
+#consulta button:hover {
+  color: black;
+  background-color: rgb(154, 255, 3);
+}
+
+@media (max-width: 860px) {
+  #contacto {
+    flex-direction: column;
+  }
+
+  #contacto h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  #contacto iframe {
+    width: 100%;
+    height: 360px;
+  }
+  #info_contacto {
+    font-size: 1rem;
+    width: 100%;
+  }
+  #consulta {
+    width: 100%;
+  }
+}

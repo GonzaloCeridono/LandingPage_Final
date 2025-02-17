@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse | GNZ Coaching</title>
+    <link rel="stylesheet" href="css/registro.css" />
+  </head>
+  <body>
+    <main>
+      <picture><img src="assets/images/logo-removebg-preview.png" alt=""></picture>
+      <article>
+        <h1>¡Bienvenido a GNZ Coaching!</h1>
+        <p>Registrarse</p>
+        <form action="index.html" method="get">
+          <fieldset>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required />
+          </fieldset>
+          <fieldset>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required />
+          </fieldset>
+          <fieldset>
+            <label for="username">E-mail</label>
+            <input type="email" name="username" id="username" required />
+          </fieldset>
+          <fieldset>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" required />
+          </fieldset>
+          <fieldset>
+            <button type="submit">Registrarse</button></a>
+          </fieldset>
+        </form>
+        <a href="login.html"
+          ><button>¿Ya tienes una cuenta? Iniciar sesión</button></a
+        >
+      </article>
+      <button class="home-button" onclick="location.href='index.html'">
+        <img src="assets/images/house-solid.svg" alt="Volver a inicio" />
+      </button>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+#hero {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  min-height: 80vh;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+#content_hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#content_hero h1 {
+  font-size: 3rem;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideLeft 1s 500ms ease-in-out 1 forwards;
+}
+
+#content_hero p {
+  color: whitesmoke;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideLeft 1s 750ms ease-in-out 1 forwards;
+}
+
+#content_hero nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideLeft 1s 1s ease-in-out 1 forwards;
+}
+
+#content_hero a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0.25rem solid white;
+  border-radius: 0.5rem;
+  color: black;
+  font-size: 1rem;
+  background-color: white;
+  padding: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  transition: all 300ms ease-in-out;
+}
+#content_hero a:hover {
+  background-color: rgb(154, 255, 3);
+  border-color: rgb(154, 255, 3);
+}
+#content_hero a:active {
+  background-color: rgb(154, 255, 3);
+  border-color: rgb(154, 255, 3);
+}
+
+#card_hero {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(14, 87, 56);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideRight 1s 500ms ease-in-out 1 forwards;
+}
+
+#card_hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 860px) {
+  #hero {
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    min-height: auto;
+    padding: 0;
+  }
+  #card_hero {
+    display: none;
+  }
+  #content_hero {
+    width: auto;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #content_hero h1 {
+    animation: none;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  #content_hero p {
+    animation: none;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  #content_hero nav {
+    animation: none;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,22 @@
+#about {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  color: white;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#about p {
+  font-size: 1.1em;
+  margin: 0 0 1rem 0;
+}
