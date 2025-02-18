@@ -33,7 +33,7 @@
 
 #servicios li {
   width: 300px;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -62,9 +62,18 @@
 
 .info_servicio p strong {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-top: 10px;
+}
+
+.info_servicio button {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 @media (max-width: 749px) {
@@ -74,6 +83,19 @@
 
   #servicios li {
     width: 200px;
-    height: auto;
+    height: 300px;
+  }
+
+  .info_servicio h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+  }
+
+  .info_servicio p {
+    font-size: 1rem;
+  }
+
+  .info_servicio p strong {
+    font-size: 1rem;
   }
 }

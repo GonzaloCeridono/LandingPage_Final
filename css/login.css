@@ -99,7 +99,7 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.home-button {
+.btnInicio {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -115,13 +115,13 @@ button:hover {
   cursor: pointer;
   outline: none;
 }
-.home-button img {
+.btnInicio img {
   width: 24px;
   height: 24px;
 }
 
-.home-button:focus,
-.home-button:hover {
+.btnInicio:focus,
+.btnInicio:hover {
   box-shadow: none;
   background-color: white;
 }
