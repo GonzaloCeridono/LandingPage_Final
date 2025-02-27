@@ -1,5 +1,5 @@
 #hero {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -143,5 +143,15 @@
     animation: none;
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 380px) {
+  #hero {
+    width: 100vw;
+  }
+
+  #content_hero nav {
+    flex-direction: column;
   }
 }

@@ -143,3 +143,14 @@
     width: 100%;
   }
 }
+
+@media (max-width: 368px) {
+  #info_contacto {
+    font-size: 0.8rem;
+    width: auto;
+  }
+
+  #contacto iframe {
+    height: 300px;
+  }
+}

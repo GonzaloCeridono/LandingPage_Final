@@ -1,4 +1,5 @@
 #servicios {
+  width: 100vw;
   text-align: center;
   padding: 50px;
   color: white;
@@ -100,41 +101,9 @@
   }
 }
 
-@media (max-width: 600px) {
-  #servicios ul {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
+@media (max-width: 550px) {
   #servicios li {
-    width: 170px;
-    height: 350px;
-  }
-
-  .info_servicio h3 {
-    font-size: 1.15rem;
-    margin: 10px 0;
-  }
-
-  .info_servicio p {
-    font-size: 1rem;
-  }
-
-  .info_servicio p strong {
-    font-size: 0.9rem;
-  }
-
-  .info_servicio button {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 549px) {
-  #servicios ul {
-    display: flex;
+    width: auto;
+    height: 300px;
   }
 }
