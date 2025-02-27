@@ -94,17 +94,6 @@ input[type="password"] {
   border-radius: 1rem;
 }
 
-button {
-  background-color: white;
-  color: #008b75;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  border-radius: 1rem;
-}
-
 form fieldset:last-child {
   display: flex;
   justify-content: center;
